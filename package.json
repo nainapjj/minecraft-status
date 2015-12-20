@@ -1,0 +1,18 @@
+{
+  "name": "minecraft-service",
+  "version": "1.0.0",
+  "description": "An application to determine the status of the Minecraft service and to run utility commands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jeff Nainaparampil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "ps-node": "0.0.5",
+    "pty": "0.0.0"
+  }
+}

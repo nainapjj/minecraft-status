@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Minecraft</title>
+	<link rel="stylesheet" href="css/foundation.min.css"/>
+	<meta class="foundation-mq">
+</head>
+
+<body>
+	<!-- Top Bar Content -->
+	<div class="top-bar">
+		<div class="top-bar-left">
+		<ul class="menu">
+			<li class="menu-text">Minecraft Status Page</li>
+		</ul>
+		</div>
+	</div>
+
+	<!-- Begin main content -->
+	<br/><br/>
+	<div class="row small-8 columns">
+		<h2>Welcome to Status Page</h1>
+		<p>The statuses of our Minecraft servers are below, and will refresh periodically. In order to send commands to the Minecraft, the correct password must be entered in the following field.</p>
+		<form>
+			<label>Password</label>
+			<input id="password" type="text"/>
+		</form>
+
+		<hr/>
+		<h5>Status</h5>
+		<small><p>This table is set to never refresh.<strong>Last refreshed at <span id="lastUpdated" class="timeago"></span></strong></p></small>
+		<table style="width: 100%">
+			<thead>
+				<td>Name</td>
+				<td>Status</td>
+				<td>Commands</td>
+			</thead>
+
+			<tr server="mainserver">
+				<td>Minecraft Main Server</td>
+				<td><span id="mainserver_status" style="font-size: 1em"></span></td>
+				<td>
+					<a action="start">Start</a>&nbsp;&nbsp;&nbsp;<a action="restart">Restart</a>
+				</td>
+			</tr>
+		</table>
+
+		<small><p class="text-right" id="someErrors"></p></small>
+	</div>
+
+	<!-- JavaScript loading -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery.timeago.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+
+</html>
