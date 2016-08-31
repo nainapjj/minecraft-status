@@ -8,8 +8,7 @@ SPREADSHEET_ID_JSON = "client_spreadsheet.json"
 ADDRESS_FORMAT = "%s:%s"
 MINECRAFT_PORT = "25565"
 TIME_FORMAT = "%A, %B %d, %Y %I:%M%p"
-#POLL_TIME = 60*5
-POLL_TIME = 10
+POLL_TIME = 60*5
 
 class SheetsService:
 
